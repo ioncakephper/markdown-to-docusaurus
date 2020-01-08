@@ -1,0 +1,32 @@
+{
+  "name": "markdown-to-docusaurus",
+  "version": "1.0.0",
+  "description": "NodeJS app to create Docusaurus documentation from an outline in Markdown file",
+  "main": "./bin/index.js",
+  "bin": {
+    "markdown-to-docusaurus": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ioncakephper/markdown-to-docusaurus.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ioncakephper/markdown-to-docusaurus/issues"
+  },
+  "homepage": "https://github.com/ioncakephper/markdown-to-docusaurus#readme",
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "commander": "^4.1.0",
+    "fs": "0.0.1-security",
+    "handlebars": "^4.5.3",
+    "js-yaml": "^3.13.1",
+    "markdown": "^0.5.0",
+    "path": "^0.12.7",
+    "yamljs": "^0.3.0"
+  }
+}
