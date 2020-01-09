@@ -13,12 +13,13 @@ program
         console.log("Initializing...")
     });
 program
-    .command('build [source]')
+    .command('build <source>')
     .option("-o, --output <docspath>", "path to output Markdown files", "./docs")
     .description('build Docusaurus documentation Markdown files and sidebar')
     .action((source, command) => {
-        console.log(source);
-        console.log(command.output);
+        let outlineFilename = setMissingExtension(source, ".md");
+        console.log(outlineFilename);
+        execute(outlineFilename);
     })
     ;
 
@@ -33,5 +34,23 @@ let text = "[Markdown] is a simple text-based [markup language]\n" +
 // console.log(tree);
 
 console.log(markdown.toHTML(text));
+
+function execute(outlineFilename) {
+    if (fs.existsSync(outlineFilename)) {
+        let text = fs.readFileSync(outlineFilename, "utf8");
+        let htmlSource = markdown.toHTML(text);
+        console.log(htmlSource);
+    }
+}
+
+function setMissingExtension(basename, extension) {
+    let ext = path.extname(basename);
+    if (ext.length == 0) {
+        return basename.trim() + extension.trim();
+    }
+
+    return basename.trim();
+}
+
 
 

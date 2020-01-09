@@ -12,11 +12,37 @@ Install the package globally
 $ npm install markdown-to-docusaurus -g
 ```
 
-Go to Docusaurus environment and initiate `markdown-to-docusaurus`.
+Create, if not exists already, a project (e.g. `documentation`) and run `docusaurus-init` in this project. See Docusaurus documentation on creating documentation project.
+
+Change to the `documentation` project, and initiate `markdown-to-docusaurus`.
 
 ```bash
 $ cd docusaurus
 $ markdown-to-docusaurus init
+```
+
+## Verifying Installation
+
+In addition to existing files and directories, the documentation project directory will contain additional files and directories:
+
+```code
+root-directory
+|-- Dockerfile
+|-- README.md
+|-- docker-compose.yml
+|-- markdown-to-docusaurus.md
+|-- markdown-to-docusaurus.json
+|-- docs
+|   |-- doc1.md
+|   |-- doc2.md
+|   |-- doc3.md
+|   |-- exampledoc4.md
+|   |-- exampledoc5.md
+|-- templates
+|   |-- topic-template.handlebars
+|   |-- header-template.handlebars
+|-- website
+|   |-- sidebars.json
 ```
 
 ## Build Documentation Files
