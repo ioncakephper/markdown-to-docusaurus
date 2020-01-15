@@ -18,7 +18,12 @@ let dogInfo = {
             ],
             "topics": [
                 {
-                    "title": "Building     your      application"
+                    "title": "Building     your      application",
+                    "topics": [
+                        {
+                            "title": "Child of building your application"
+                        }
+                    ]
                 }
             ]
         }

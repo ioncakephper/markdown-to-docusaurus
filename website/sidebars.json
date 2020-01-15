@@ -1,1 +1,15 @@
-{"docs":{"Getting Started":["getting-started",{"type":"subcategory","label":"General","ids":["building-your-application"]}]}}
+{
+    "docs": {
+        "Getting Started": [
+            "getting-started",
+            {
+                "type": "subcategory",
+                "title": "Building Your Application",
+                "ids": [
+                    "building-your-application",
+                    "child-of-building-your-application"
+                ]
+            }
+        ]
+    }
+}
