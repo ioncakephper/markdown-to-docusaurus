@@ -1,0 +1,24 @@
+{
+    "suites": [
+        {
+            "suite": "Suite title",
+            "tests": [
+                {
+                    "title": "Test title goes here..."
+                },
+                {
+                    "suites": [
+                        {
+                            "suite": "Another suite goes here...",
+                            "tests": [
+                                "First title goes here",
+                                "Second title goes here",
+                                "Fourth title goes here"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
