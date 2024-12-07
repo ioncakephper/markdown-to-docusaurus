@@ -31,6 +31,6 @@
   },
   "dependencies": {
     "html-dom-parser": "^0.2.3",
-    "jsdom": "^15.2.1"
+    "jsdom": "^25.0.1"
   }
 }
